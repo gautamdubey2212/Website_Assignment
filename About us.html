@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+         <header>
+            <nav
+                class="navbar navbar-expand-sm navbar-black bg-light"
+            >
+                <div class="container" >
+                    <img
+                        src="data:image/png;base64,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"
+                        class="img-fluid rounded-circle"
+                        alt=""
+                        height="100px"
+                        width="100px"
+                    />
+                    
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " href="Home.html" aria-current="page"
+                                    >Home
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="About Us.html">About Us</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="Product.html">Product</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="dropdownId"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >Menu</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownId"
+                                >
+                                    <a class="dropdown-item" href=""
+                                        >Grinched Menu </a
+                                    >
+                                    <a class="dropdown-item" href=""
+                                        >McCafe </a
+                                    >
+                                    <a class="dropdown-item" href=""
+                                        >McCafe </a
+                                    >
+                                    <a class="dropdown-item" href=""
+                                        >HappyMeal </a
+                                    >
+                                    <a class="dropdown-item" href=""
+                                        >Whats'sNew </a
+                                    >
+                                    <a class="dropdown-item" href=""
+                                        >Breakfast Menu </a
+                                    >
+                                    <a class="dropdown-item" href=""
+                                        >Fries&Salads </a
+                                    >
+                                    <a class="dropdown-item" href=""
+                                        >Burgers </a
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0" action="Registeration.html">
+
+                            <button
+                                class="btn btn-outline-success my-2 my-sm-0"
+                                type="submit"
+                            >
+                                Register
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+
+        <main>
+            <p style="text-align: center; font-size: xx-large; font-weight: bolder; text-shadow: 2px 2px tomato;">About Us</p>
+            <div
+                class="container my-4"
+            >
+                <img
+                    src="https://s7d1.scene7.com/is/image/mcdonalds/About_Us_Hero_1260x560_Desktop:hero-desktop?resmode=sharp2"
+                    class="img-fluid rounded-top"
+                    alt=""
+                    width="100%"
+                />
+                
+            </div>
+
+            <h1 style="text-align: center; margin-top: 50px;">The McDonald’s story starts with one man.</h1>
+            <p style="text-align: center;">Back in 1954, a man named Ray Kroc discovered a small burger restaurant in California and wrote the first page of McDonald’s history. From humble beginnings as a small restaurant, we're proud to have become one of the world's leading restaurant chains with more than 36,000 restaurants in more than 100 countries.</p>
+            <div
+                class="container my-4"  
+            >
+                <div
+                    class="row justify-content-center align-items-center g-2 "
+                >
+                    <div class="col">
+                        <h1 class="text-center text-black my-4" style="text-shadow: 2px 2px tomato;">"We are dedicated to Providing the best"</h1>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div
+                class="container"
+            >
+                <div
+                    class="row justify-content-center align-items-center g-2"
+                >
+                    <div class="col mx-4"><div class="card">
+                        <img class="card-img-top" src="https://s7d1.scene7.com/is/image/mcdonalds/2PUB_join1in8_2336x1040:2-column-desktop?resmode=sharp2" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Meet the 1 in 8</h4>
+                            <p class="card-text">Where you start stays with you.</p>
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Learn More
+                            </button>
+                            
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col"><div class="card">
+                        <img class="card-img-top" src="https://s7d1.scene7.com/is/image/mcdonalds/Leadership_Team_2Col_1110x740_Desktop:2-column-desktop?resmode=sharp2" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Leadership Team</h4>
+                            <p class="card-text">We wouldn’t be here today without our leaders.</p>
+                             <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+
+             <div
+                class="container my-4"
+            >
+                <div
+                    class="row justify-content-center align-items-center g-2"
+                >
+                    <div class="col mx-4"><div class="card">
+                        <img class="card-img-top" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/Value_In_Action_2Col_1110x740_Desktop.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Values in Action</h4>
+                            <p class="card-text">Follow the steps we take to be a good community leader.</p>
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Learn More
+                            </button>
+                            
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col"><div class="card">
+                        <img class="card-img-top" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/Investor_Relations_2Col_1110x740_Desktop.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Investor Relations</h4>
+                            <p class="card-text">Find out what drives our business and see our reports.</p>
+                             <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+
+             <div
+                class="container my-4"
+            >
+                <div
+                    class="row justify-content-center align-items-center g-2"
+                >
+                    <div class="col mx-4"><div class="card">
+                        <img class="card-img-top" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/News_Notifications_2Col_1110x740_Desktop.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">News & Notifications</h4>
+                            <p class="card-text">Get the latest McDonald’s facts and news.</p>
+                            <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Learn More
+                            </button>
+                            
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col"><div class="card">
+                        <img class="card-img-top" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/Franchise_Info_2Col_1110x740_Desktop.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Franchise Info</h4>
+                            <p class="card-text">Learn about McDonald’s Owner/Operator opportunities.</p>
+                             <button
+                                type="button"
+                                class="btn btn-warning"
+                            >
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+           
+            
+            
+            <div
+                class="container my-4"
+            >
+                <div
+                    class="row justify-content-center align-items-center g-2"
+                >
+                    <div class="col"><div class="card ">
+                        <h4 class="card-title text-danger text-black">Crew Member</h4>
+                            <p class="card-text text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, assumenda.</p>
+                        <img class="card-img-top" src="https://d1905rzuxsrnqw.cloudfront.net/eyJidWNrZXQiOiIzMy1jZG4taW1hZ2UtaGFuZGxlciIsImtleSI6InByb2R1Y3Rpb25cL21jZHNjYXJlMjUwMVwvYXBwbGljYXRpb25cL2ZpbGVzXC84NzE2XC82MDIzXC8zNTQ5XC8yMjA2MjlfMzNfTWNEb25hbGRzXzMwOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjB9fX0=?_v=1717165106" alt="Title" />
+                    </div>
+                    </div>
+                    <div class="col"><div class="card">
+                        <h4 class="card-title text-center text-black">Crew Member</h4>
+                            <p class="card-text text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, assumenda.</p>
+                        <img class="card-img-top" src="https://d1905rzuxsrnqw.cloudfront.net/eyJidWNrZXQiOiIzMy1jZG4taW1hZ2UtaGFuZGxlciIsImtleSI6InByb2R1Y3Rpb25cL21jZHNjYXJlMjUwMVwvYXBwbGljYXRpb25cL2ZpbGVzXC8yNjE3XC80MTE3XC80NDc0XC9saXN0X2ltYWdlX292ZXJuaWdodC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjB9fX0=?_v=1741174474" alt="Title" />
+                        
+                    </div>
+                    </div>
+                    <div class="col"><div class="card">
+                        <h4 class="card-title text-black text-center">Crew Member</h4>
+                            <p class="card-text text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, assumenda.</p>
+                        <img class="card-img-top" src="https://d1905rzuxsrnqw.cloudfront.net/eyJidWNrZXQiOiIzMy1jZG4taW1hZ2UtaGFuZGxlciIsImtleSI6InByb2R1Y3Rpb25cL21jZHNjYXJlMjUwMVwvYXBwbGljYXRpb25cL2ZpbGVzXC80MzE2XC82MTg3XC81NzQzXC8yMjA2MjlfMzNfTWNEb25hbGRzXzEzNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjB9fX0=?_v=1717165544" alt="Title" />
+                        
+                    </div>
+                    </div>
+                    <div class="col"><div class="card">
+                        <h4 class="card-title text-black text-center">Crew Member</h4>
+                            <p class="card-text text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, assumenda.</p>
+                        <img class="card-img-top" src="https://d1905rzuxsrnqw.cloudfront.net/eyJidWNrZXQiOiIzMy1jZG4taW1hZ2UtaGFuZGxlciIsImtleSI6InByb2R1Y3Rpb25cL21jZHNjYXJlMjUwMVwvYXBwbGljYXRpb25cL2ZpbGVzXC80MzE2XC82MTg3XC80OTE2XC9QZW9wbGVfTWFuYWdlcl9pbWFnZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjB9fX0=?_v=1717168279" alt="Title" />
+                        
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div
+                class="container text-center w-100 my-5"
+            >
+                <iframe width="960" height="315" src="https://www.youtube.com/embed/79phlhutGLg?si=ZUZmfMD_cYHc_NO2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            
+            
+        </main>
+         <footer class="bg-light my-4 p-5">
+            <div
+                class="container text-light" 
+            >
+                <div
+                    class="row justify-content-center align-items-center g-2"
+                >
+                    <div class="col d1 text-black " style="font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-style: italic; color: yellow;">Customer Services
+                        <p>Contact Us</p>
+                        <p>Track Order</p>
+                        <p>Return Order</p>
+                        <p>Cancel Order</p>
+                    </div>
+                    <div class="col d1 text-black" style="font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-style: italic; color: yellow;">Company
+                    <p>About Us</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>We are hiring</p>
+                    </div>
+                    <div class="col d1 text-black" style="font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-style: italic; color: yellow;">Connect with Us
+                    <p>About Us</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>We are hiring</p>
+                    </div>
+                    <div class="col d1 text-black" style="font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-style: italic; color: yellow;">Keep Up to Date
+                        <p>About Us</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>We are hiring</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div
+                class="container"
+            >
+                </div>
+                
+            </div>
+
+            <div
+                class="container"
+            >
+                <div
+                    class="row justify-content-center align-items-center g-2 text-center"
+                >
+                    <div class="col text-black " style="font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-style: italic; color: yellow;"> &copy; 2017 - 2025 McDonald's. All Rights Reserved.</div>
+                </div>
+                
+            </div>
+            
+            
+            
+
+            
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
